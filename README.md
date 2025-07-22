@@ -130,8 +130,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Pulkit**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@pulkitgandhi02](https://github.com/pulkitgandhi02)
+- Email: gandhipulkit29@gmail.com
 
 ## 🙏 Acknowledgments
 
