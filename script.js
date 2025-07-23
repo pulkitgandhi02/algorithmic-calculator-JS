@@ -1,3 +1,5 @@
+alert("PS: This is not a Memory-based Calculator. You cannot continue your calculation after pressing the = (Calculate) Button.")
+
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.btn');
 const toggle = document.getElementById('theme-toggle');
