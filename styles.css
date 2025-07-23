@@ -1,0 +1,150 @@
+:root {
+  --bg-color: #f0f0f0;
+  --btn-color: #ffffff;
+  --btn-text-color: #333;
+  --display-bg: #ffffff;
+  --display-text: #000;
+}
+
+body.dark {
+  --bg-color: #222;
+  --btn-color: #444;
+  --btn-text-color: #f0f0f0;
+  --display-bg: #000;
+  --display-text: #0f0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 300px;
+  background: var(--bg-color);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.display {
+  background: var(--display-bg);
+  color: var(--display-text);
+  text-align: right;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.btn {
+  background: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+.operator {
+  background: #f9a825;
+  color: #fff;
+}
+
+.clear {
+  border: 1.5px solid black;
+}
+
+.equal {
+  background: #3268f0;
+  color: #fff;
+  grid-column: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; width: 16px;
+  left: 2px; bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+#theme-label {
+  color: #333; /* default in light mode */
+  transition: color 0.3s;
+}
+
+body.dark #theme-label {
+  color: #fff; /* white in dark mode */
+}
+.backspace {
+  background: #9f3a31;         /* light red */
+  color: white;
+}
+
+.backspace:hover {
+  background: #e56d6d;
+  color:#111;        /* slightly darker red on hover */
+}
