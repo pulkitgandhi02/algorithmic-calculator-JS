@@ -16,7 +16,7 @@ A clean, responsive JavaScript calculator with light/dark theme toggle and essen
 
 ## 🚀 Demo
 
-[Live Demo](https://pulkit-algorithmic-calculator.netlify.app/)
+[Live Demo](https://pulkitgandhi02.github.io/algorithmic-calculator-JS/)
 
 ## 📸 Screenshots
 
