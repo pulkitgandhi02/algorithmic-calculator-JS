@@ -144,6 +144,17 @@ body.dark #theme-label {
   color: white;
 }
 
+#cal-footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #666;
+  width: 100%;
+  position: absolute; /* Or use 'fixed' if you want it always visible */
+  bottom: 0;
+  left: 0;
+}
+
 .backspace:hover {
   background: #e56d6d;
   color:#111;        /* slightly darker red on hover */
